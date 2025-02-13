@@ -1,0 +1,40 @@
+.navBar {
+    background-color: black;
+    padding: 5px;
+    height: 25px;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.menu {
+    float: right;
+}
+
+.dropDownLink{
+    color: white;
+    text-decoration: none;
+}
+
+.dropDownLink:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.dropDownOption{
+    padding: 5px;
+    text-align: center;
+}
+
+.dropDown{
+    width: 150px;
+    background-color: black;
+    float: right;
+}
