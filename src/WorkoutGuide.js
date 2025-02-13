@@ -7,11 +7,10 @@ const WorkoutGuide = () => {
     const [currentPage, setCurrentPage] = useState(1);
 
     const renderPage = () => {
-        console.log(currentPage)
         switch (currentPage) {
-            case 2: return <WorkOut title={"Workout 2"}/>; break;
-            case 3: return <WorkOut title={"Workout 3"}/>; break;
-            case 4: return <WorkOut title={"Workout 4"}/>; break;
+            case 2: return <WorkOut title={"Workout 2"}/>;
+            case 3: return <WorkOut title={"Workout 3"}/>;
+            case 4: return <WorkOut title={"Workout 4"}/>;
             default: return <WorkOut title={"Workout 1"}/>;
         }
     }
