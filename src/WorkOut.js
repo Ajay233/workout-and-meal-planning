@@ -7,7 +7,11 @@ const WorkOut = (props) => {
 
     const renderLinks = (links) => {
         return links.map((link, i) => {
-            return <div key={`link-${i}`} className={"workout-video-link"}><a href={`${link}`}>Demo</a></div>
+            return(
+                <div key={`link-${i}`} className={"workout-video-link fas fa-play-circle"}>
+                    <a href={`${link}`}>{`Play demonstration video ${links.length > 1 ? i+1 : ""}`}</a>
+                </div>
+            )
         })
     }
 
