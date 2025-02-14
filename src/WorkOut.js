@@ -8,8 +8,9 @@ const WorkOut = (props) => {
     const renderLinks = (links) => {
         return links.map((link, i) => {
             return(
-                <div key={`link-${i}`} className={"workout-video-link fas fa-play-circle"}>
-                    <a href={`${link}`}>{`Play demonstration video ${links.length > 1 ? i+1 : ""}`}</a>
+                <div key={`link-${i}`} className={"workout-video-link"}>
+                    <span className={"fas fa-play-circle play-icon"} style={{color:"Red"}}></span>
+                    <a href={`${link.url}`}>{`${link.title} video`}</a>
                 </div>
             )
         })

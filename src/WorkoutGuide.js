@@ -25,8 +25,8 @@ const WorkoutGuide = () => {
             <button onClick={() => setCurrentPage(2)} className={"workout-button"}>Back and Arms 1</button>
             <button onClick={() => setCurrentPage(3)} className={"workout-button"}>Quad and Hamstrings 1</button>
             <button onClick={() => setCurrentPage(4)} className={"workout-button"}>Chest and Delts 2</button>
-            <button onClick={() => setCurrentPage(4)} className={"workout-button"}>Back and Arms 2</button>
-            <button onClick={() => setCurrentPage(4)} className={"workout-button"}>Quad and Hamstrings 2</button>
+            <button onClick={() => setCurrentPage(5)} className={"workout-button"}>Back and Arms 2</button>
+            <button onClick={() => setCurrentPage(6)} className={"workout-button"}>Quad and Hamstrings 2</button>
             <div className={"workout-guide"}>{renderPage()}</div>
         </div>
     );
