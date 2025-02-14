@@ -1,0 +1,19 @@
+.workout-screenshot {
+    width: 100%;
+}
+
+.workout-video-link {
+    padding: 5px;
+    background-color: gold;
+    border-radius: 15px;
+    margin: 5px 10px 8px 10px;
+    padding: 5px;
+}
+
+.workout-card {
+    margin: 5px 9% 5px 11%;
+    background-color: #252525;
+    border-radius: 5px;
+    width: 80%;
+    padding: 5px;
+}

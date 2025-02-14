@@ -1,12 +1,16 @@
 .navBar {
     background-color: black;
+    position: sticky;
     padding: 5px;
     height: 25px;
+    top: 0; /* Stick the element to the top of the viewport */
+    z-index: 100;
 }
 
 .navLink {
-    color: white;
+    color: Gold;
     text-decoration: none;
+    margin: 0 10px;
 }
 
 .navLink:hover {

@@ -1,0 +1,13 @@
+.workout-guide {
+    margin: 20px 0;
+    overflow: scroll;
+    height: 75vh;
+}
+
+.workout-button {
+    border-radius: 15px;
+    border: 1px solid gold;
+    color: gold;
+    background-color: #252525;
+    /*margin: 5px;*/
+}

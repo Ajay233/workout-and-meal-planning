@@ -4,8 +4,8 @@ import './NavBar.css'
 const NavBar = () => {
     return(
         <div className={"navBar"}>
-            <span className={"navLink"}>Link 1</span>
-            <span className={"navLink"}>Link 2</span>
+            <span className={"navLink"}>Workouts</span>
+            <span className={"navLink"}>Meal plans - Coming Soon :)</span>
         </div>
     );
 }

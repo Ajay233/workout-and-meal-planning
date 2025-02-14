@@ -1,6 +1,8 @@
 import React from "react";
 import {useState} from "react";
 import WorkOut from "./WorkOut";
+import {workOutData} from "./WorkoutData";
+import "./WorkoutGuide.css"
 
 const WorkoutGuide = () => {
 
@@ -8,20 +10,24 @@ const WorkoutGuide = () => {
 
     const renderPage = () => {
         switch (currentPage) {
-            case 2: return <WorkOut title={"Workout 2"}/>;
-            case 3: return <WorkOut title={"Workout 3"}/>;
-            case 4: return <WorkOut title={"Workout 4"}/>;
-            default: return <WorkOut title={"Workout 1"}/>;
+            case 2: return <WorkOut workout={workOutData.backAndArmsOne}/>;
+            case 3: return <WorkOut workout={workOutData.quadAndHamstringsOne}/>;
+            case 4: return <WorkOut workout={workOutData.chestAndDeltsTwo}/>;
+            case 5: return <WorkOut workout={workOutData.backAndArmsTwo}/>;
+            case 6: return <WorkOut workout={workOutData.quadAndHamstringsTwo}/>;
+            default: return <WorkOut workout={workOutData.chestAndDeltsOne}/>;
         }
     }
 
     return(
         <div>
-            <button onClick={() => setCurrentPage(1)}>Page 1</button>
-            <button onClick={() => setCurrentPage(2)}>Page 2</button>
-            <button onClick={() => setCurrentPage(3)}>Page 3</button>
-            <button onClick={() => setCurrentPage(4)}>Page 4</button>
-            <div>{renderPage()}</div>
+            <button onClick={() => setCurrentPage(1)} className={"workout-button"}>Chest and Delts 1</button>
+            <button onClick={() => setCurrentPage(2)} className={"workout-button"}>Back and Arms 1</button>
+            <button onClick={() => setCurrentPage(3)} className={"workout-button"}>Quad and Hamstrings 1</button>
+            <button onClick={() => setCurrentPage(4)} className={"workout-button"}>Chest and Delts 2</button>
+            <button onClick={() => setCurrentPage(4)} className={"workout-button"}>Back and Arms 2</button>
+            <button onClick={() => setCurrentPage(4)} className={"workout-button"}>Quad and Hamstrings 2</button>
+            <div className={"workout-guide"}>{renderPage()}</div>
         </div>
     );
 }

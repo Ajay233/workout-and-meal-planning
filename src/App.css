@@ -1,8 +1,10 @@
 .App {
   text-align: center;
-  background-image: url("../public/kelly-sikkema-IZOAOjvwhaM-unsplash.jpg");
+  background-image: url("../public/synth_wave.png");
+  background-attachment: fixed;
   background-color: #cccccc; /* Used if the image is unavailable */
-  height: 500px; /* You must set a specified height */
+  height: 100vh; /* You must set a specified height */
+  width: 100vw;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -41,4 +43,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+.main-heading {
+  font-size: 45px;
+  font-weight: bold;
+  color: gold;
+  margin: 10px 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
